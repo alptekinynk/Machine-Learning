@@ -1,0 +1,25 @@
+#Confusion Matrix
+
+	Confusion matrix, verideki var olan durum ile sınıflama modelimizin 
+doğru ve yanlış tahminlerinin sayısını gösterir. Aşağıda 2×2’lik bir 
+confusion matrix görülmektedir. Bu matrix tahmindeki hedef sayısına 
+göre değişir. Başka bir değişle NxN’lik olabilir. 
+
+****Örneğin elimizde 1000 tane veri olsun. 900 tanesi A sınıfı içinde 
+	iken 100 tanesi B sınıfının içinde olsun. Bir makine öğrenmesi 
+	metodu geliştirirsen ve hepsini A olarak bilirse başarısı %90’dır.
+	
+|--------------------------------------| ** False Negative ve True Positive
+|    |       C1       |       C2       |	bizim başarılı tahminlerimiz.
+|---------------------|----------------|
+| C1 | True Positive  | False Negative |
+|---------------------|----------------|
+| C2 | False Positive | True Negative  |
+|--------------------------------------|
+
+*Accuracy= acc(M)  model X için yüxde kaç doğru sınıflandırma oldğunu verir.
+-Error rate = 1-acc(X)
+-sensitivity = t-pos/(t-pos+f-neg)  *t-pos recognition rate
+-specificity = t-neg/(t-neg+f-pos)	*t-neg recognition rate
+-precision = t-pos/(t-pos+f-pos)
+-accuracy = sensitivity * pos/(pos+neg) + specificity * neg/(pos+neg)

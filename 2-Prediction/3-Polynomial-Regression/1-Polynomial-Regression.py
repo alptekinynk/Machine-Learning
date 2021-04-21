@@ -10,8 +10,8 @@ veriler = pd.read_csv("maaslar.csv")
 
 
 #Data Frame slicing
-x = veriler.iloc[:,1:2]
-y = veriler.iloc[:,2:]
+x = veriler.iloc[:,1:2] #eğitim seviyesi
+y = veriler.iloc[:,2:] #maaşlar
 
     #NumPY array 
 X = x.values
