@@ -1,0 +1,13 @@
+#Association Rule Mining (ARM / ARL)
+
+**Türkçesi "Birliktelik Kural Çıkarımı" olarak adlandırılır. Olayların
+birlikte gerçekleşme durumlarını çözümleyip veriler arası ilişkiler kuran
+bir yöntemdir. Örneğin müşterilerin yaptıkları alışverişlerdeki ürünler
+arası ilişkileri bularak satın alma alışkanlıklarını çözümler.
+
+**Support(a) = a varlığını içeren eylem sayısı / Toplam Eylem Sayısı
+**Confidance(a->b) = a ve b varlığını içeren eylem sayısı / a varlığını içeren eylem sayısı
+**Lift(a->b) = Confidence(a->b) / Support(b) # a'nın b'y etkisi nedir?
+
+
+Kod kaynağı : Yu Mochizuki - Sadi evren şeker
