@@ -1,0 +1,29 @@
+**K-Means nasıl çalışır?
+	1)Kaç küme olacağı kullanıcıdan alınır (alternatif olarak X-means)
+	2)Rasgele olarak k tane merkez nokta seçilir
+	3)Verileri belirlenen merkez noktalara göre gruplar
+	4)Yeni oluşan gruplar için yeni merkez noktalar seçer
+	5)Yeni merkezlere göre tekrar kümeleme yapar.Bu işlem bir stabilizasyona
+	  durumuna geçene kadar devam eder.
+	
+**K-Means yapılacak kümeleme sayısını kullanıcıdan alır bu bazı durumlar
+için olumsuz veya doğruluğu düşük sonuçlar oluşturabilir. Bu tarz durumların 
+oluşmaması için kümeleme sayısını otomatik belirleyen X-Means kullanılabilir. 
+
+**Unsupervised bir öğrenme türüdür.Yani alınan veri grubu daha önceden train 
+edilmemiş dolayısıyla önceden oluşturulmuş bir model yoktur.Alınan verinin 
+her parçası objektif bir yaklaşım ile incelenip makine tarafından modellenir.
+Bir başka değişle modellemenin kendisi bir tahmin ve öğrenmedir.
+
+**Merkezi başlangıç noktalarının rassal alınması bazı durumlarda kümelemenin 
+daha verimli bir formda yapılabilecekken daha farklı sonuçlar çıkmasını sağlayabilir.
+K-Means++ algoritması bu durumu çözmek için merkez noktanın yeniden hesaplanmasını 
+değiştirmiştir.Yeni hesaplamada merkez noktalar daha uzak mesafelere kayabilir.
+
+**K-Means algoritmasında K değerinin optimal belirlenmesi için WCSS yöntemi kullanılabilir. 
+Bu yöntem 2'den K'ya kadar bölütleme yapıpı bu bölütlemeler sonucunda her grup için noktaların 
+bulundukları merkeze olan uzaklıklarının karesini alır.Değer K'ya yaklaştıkça azalacaktır ve 
+K bölütleme sayısı için 0 verecektir.Bunu grafik formuna döktüğümüzde elde ettiğimiz noktaların 
+en çok kırılımı gösteren ve en hassas noktayı bulup bu noktanın bölütleme sayısını kabul edebiliriz.
+
+

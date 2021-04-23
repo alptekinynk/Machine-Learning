@@ -1,0 +1,27 @@
+#Hiyerarşik Bölütleme
+**Agglomerative ve divisive olmak üzere 2'ye ayrılır.Biri diğerinin
+tersi mantığı ile çalışır.
+
+	1-Agglomerative
+		Uzaya dağıtılan bütün noktalar ayrı ayrı küme olarak 
+		kabul edilir.Daha sonra en yakın komşular bir küme 
+		olarak kabul edilmeye başlar. 
+	2-Divisive
+		Her nokta başta tek bir kümenin elemanıdır.Daha sonra
+		küme alt gruplara bölünerek daha ufak ve az elemanlı 
+		kümeler	elde edilir.
+
+**Noktalar arası mesafe ölçümleri
+	1.Metrik Problemi
+		-Öklit Mesafesi
+	2.Referanslar
+		-En yakın noktalar
+		-En uzak noktalar
+		-Ortalama
+		-Merkezler arası mesafe
+		
+**Dendogram
+Bir dendrogram , nesneler arasındaki hiyerarşik ilişkiyi gösteren
+bir diyagramdır. En yaygın olarak hiyerarşik kümelemenin bir çıktısı 
+olarak oluşturulur . Bir dendrogramın ana kullanımı, nesneleri 
+kümelere ayırmanın en iyi yolunu bulmaktır. 
