@@ -1,0 +1,86 @@
+#Artifical Neural Network
+
+*İnsan sinir hücrelerinin taklit edilmeye çalışılması ile ortaya 
+çıkmıştır.Sistem nöron ve sinapsislerden olurşur.Neural Network 
+sistemlerinde bağımsız değişkenler(girdiler) standardize edilmiş 
+olarak verilmelidir. Bağımlı değişken herhangi bir veri türünde 
+olabilir.Her sinapsisin kendi ağırlığı vardır.Bu her nörona gelen
+yükü belirler.
+
+
+	#Threshold Function
+*Nöronların çalışması için Aktivasyon fonksiyonu(Threshold func.)
+sonucu oluşmalıdır.Başka bir değişle her nöron için belirli 
+bir eşik değeri vardır.Ancak bu değerin aşılması ile nöron 
+kendisine gönderilen parametreleri alıp çıktı verebilir.
+
+*Bütün foksiyonlar aktivasyon fonksiyonu olarak kullanılabilir. 
+Bazı foksiyonlar diğerlerine göre daha popüler hale gelmiş ve 
+daha fazla kullanılmaktadır. 
+	1)Step function 
+	2)Sigmoid function
+	3)Rectifier function
+	4)Hyperbolic Tangent
+
+
+	#Layer
+*Neural Network'ler birden fazla nöronun birbiri ile birden
+fazla katman oluşturacak şekilde bağlanması ile oluşur. 
+Bu katmanlar
+	-Input Layer
+	-Hidden Layer
+	-Output Layer
+olmak üzere 3 tipten oluşur. Hidden Layer kendi içinde 1'den
+fazla katman barındırabilir.
+
+
+	#PERCEPTRON
+*Artifical Neural Network öğrenmesi çok farklı yöntemlerle 
+gerçekleşebilir.Temelde öğrenme diye tanımladığımız şey 
+sinapsislerin sahip olduğu ağırlık ve nöronların Threshold 
+değerlerinin makine tarafından doğru ayarlanmasıdır.Bunun için 
+en basit yöndetmlerden biri PERCEPTRON'dur.
+
+*Tahmin sonrası geri besleme yapılır ve bir sonraki tahmin
+artırılmaya çalışılır. 
+	c= 1/2(real- prediction)^2
+PERCEPTRON için kullanılan geri besleme miktarın formülüdür.
+		
+		#LEARNING RATE
+*Bu değer sonucu hesaplanan değer birden sisteme verilmez çünkü
+bu sistemde ani değişikliklerin olmasına neden olabilir bu daha
+sistemin o ana kadar öğrenmiş olduğu değerleri saptırabilir.
+Bu yüzden "LEARNING RATE" dediğimiz kavram ortaya çıkıyor.Bu rate
+hesaplanan geri besleme miktarının ne kadarının sisteme 
+verileceğini belirler. 
+
+	#Gradient Descendent
+*Gradient inişi, bir fonksiyonun minimumunu bulmak için birinci 
+mertebeden yinelemeli optimizasyon algoritmasıdır.Eğim inişini 
+kullanarak yerel minimum bir nokta bulmak için, geçerli noktadaki
+fonksiyonun gradyanının negatifiyle orantılı adımlar atılır. Bunun
+yerine gradyanın pozitif ile orantılı olarak adımlar atılınırsa, 
+bu fonksiyonun yerel maksimuma yaklaştırır; bu fonksiyona gradyen 
+tırmanışı da denir.
+
+Gradyan inişi aynı zamanda en dik iniş olarak bilinir.
+
+
+	#Backward Propagation
+1)Btütü ağı rasgele doldur
+
+2)Veri kümesinden ilk satır her girdi 1 nöron olucak şekilde verilir.
+
+3)İlei yönlü yayılım yaparak istenilen sonuç alınana kadar güncellenir.
+
+4)Hata değeri hesaplanır
+
+5)Geri Yayılım yapılarak her sinapsislerdeki ağırlıklar hata miktarından
+sorumlu olduğu kadar değiştirilir. 
+
+6)İlk 5 adım istenilen sonuç elde edilene kadar tekrarlanır (Reinforced learning)
+veya eldeki bütün verileri çalıştırdıktan sonra tek seferde güncelleme yapar
+(Batch learning)
+
+7)Bütün eğitim kümesi çalıştırıldıktan sonra bir tur(epoch) tamamlanmış olur.
+
