@@ -17,8 +17,10 @@ from sklearn.linear_model import LinearRegression
 lin_reg = LinearRegression()
 lin_reg.fit(X,Y)
 
+y1 = lin_reg.predict(X)
+
 plt.scatter(X,Y,color='red')
-plt.plot(x,lin_reg.predict(X), color = 'blue')
+plt.plot(x,y1, color = 'blue')
 plt.show()
 
 
